@@ -1,0 +1,181 @@
+/*---------------------------------------
+General Styles
+---------------------------------------*/
+
+html {
+    font-size: 62.5%;
+}
+
+body {
+    background-color: #ffffff;
+    font-size: $baseFontSize;
+    color: $baseFontColor;
+    line-height: $baseLineHeight;
+    font-family: $baseFontFamily;
+    font-weight: 400;
+}
+
+::selection {
+    background-color: #e74c3c;
+    color: #ffffff;
+}
+
+p {
+    font-size: $baseFontSize;
+    color: $baseFontColor;
+    line-height: $baseLineHeight;
+    font-family: $baseFontFamily;
+    font-weight: 400;
+    margin-bottom: 28px;
+    .text-white &,
+    .theme-bg & {
+        color: #ffffff;
+    }
+    &:last-child {
+        margin-bottom: 0;
+    }
+}
+
+h1,
+.h1 {
+    font-size: 4.2rem;
+}
+
+h2,
+.h2 {
+    font-size: 3.4rem;
+}
+
+h3,
+.h3 {
+    font-size: 3rem;
+}
+
+h4,
+.h4 {
+    font-size: 2.4rem;
+}
+
+h5,
+.h5 {
+    font-size: 1.8rem;
+}
+
+h6,
+.h6 {
+    font-size: 1.4rem;
+}
+
+h1,
+.h1,
+h2,
+.h2,
+h3,
+.h3,
+h4,
+.h4,
+h5,
+.h5,
+h6,
+.h6 {
+    line-height: 100%;
+    font-weight: 600;
+    font-family: $baseFontFamily;
+    margin-top: 0;
+    margin-bottom: 18px;
+    .text-white &,
+    .theme-bg & {
+        color: #ffffff;
+    }
+}
+
+ul {
+    .text-white &,
+    .theme-bg & {
+        color: #ffffff;
+    }
+}
+
+a {
+    transition: all 0.3s ease;
+    .theme-bg & {
+        color: #ffffff;
+    }
+    &:hover,
+    &:focus,
+    &:visited {
+        outline: none;
+        text-decoration: none;
+    }
+}
+
+.section {
+    padding: 0;
+    width: 100%;
+    margin: 0;
+    position: relative;
+    clear: both;
+}
+
+.section-padding {
+    padding: 120px 0;
+}
+
+.theme-bg {
+    color: #ffffff;
+}
+
+.gray-bg {
+    background-color: #f6f6f6;
+}
+
+.red-bg {
+    background-color: #e74c3c;
+}
+
+.section-header {
+    margin-bottom: 77px;
+    &.section-header-left {
+        margin-bottom: 0;
+    }
+    .btn {
+        margin-top: 26px;
+        margin-bottom: 0;
+    }
+}
+
+.section-title {
+    margin: 0;
+}
+
+.section-subtext {
+    margin-top: 18px;
+    margin-bottom: 0;
+}
+
+.form-group label.control-label {
+    .theme-bg &,
+    .text-white & {
+        color: #ffffff;
+    }
+}
+
+.form-control,
+.form-group .form-control,
+.form-group.is-focused .form-control {
+    .theme-bg &,
+    .text-white & {
+        background-image: linear-gradient(#ffffff, #ffffff), linear-gradient(#ffffff, #ffffff);
+    }
+}
+
+.scrollup {
+    position: fixed;
+    bottom: 25px;
+    right: 25px;
+    padding: 0px 16px 5px 13px !important;
+    display: none;
+    .fa {
+        line-height: 100%;
+    }
+}

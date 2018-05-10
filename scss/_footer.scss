@@ -1,0 +1,127 @@
+/*---------------------------------------
+Footer Styles
+---------------------------------------*/
+
+footer {
+    float: left;
+    width: 100%;
+    clear: both;
+    padding: 0;
+}
+
+.footer-upper {
+    padding-top: 120px;
+    padding-bottom: 50px;
+    .widget {
+        float: left;
+        width: 100%;
+        + .widget{
+            margin-top: 27px;
+        }
+    }
+    .widget-title {
+        font-size: 1.8rem;
+        margin-bottom: 27px;
+    }
+    .widget-inner {
+        float: left;
+        width: 100%;
+        ul {
+            list-style: none;
+            margin: 0;
+            padding: 0;
+            li {
+                display: inline-block;
+                width: 100%;
+                a {
+                    font-size: 1.4rem;
+                    padding: 0;
+                    font-weight: 400;
+                    text-transform: none;
+                    display: inline-block;
+                    &:before {
+                        content: "\f105";
+                        font-family: "FontAwesome";
+                        margin-right: 4px;
+                    }
+                }
+            }
+        }
+    }
+    .footer-logo {
+        display: inline-block;
+        +p {
+            margin-top: 26px;
+        }
+    }
+    .widget-contact {
+        float: left;
+        width: 100%;
+    }
+    .widget-contact-item {
+        float: left;
+        width: 100%;
+        +.widget-contact-item {
+            margin-top: 10px;
+        }
+    }
+    .contact-icon {
+        float: left;
+        width: 14px;
+        margin-right: 5px;
+    }
+    .contact-info {
+        float: left;
+        width: calc(100% - 19px);
+    }
+    .social-widget, .payment-widget{
+        .widget-title{
+            margin-bottom: 14px;
+        }
+    }
+}
+
+.social {
+    float: left;
+    width: 100%;
+    a {
+        display: inline-block;
+        float: left;
+        height: 40px;
+        width: 40px;
+        border-radius: 50%;
+        color: #ffffff;
+        font-size: 1.8rem;
+        line-height: 44px;
+        text-align: center;
+        + a{
+            margin-left: 10px;
+        }
+    }
+}
+.payments{
+    a{
+        color: $baseFontColor;
+    }
+}
+.copyright-footer{
+    padding: 23px 0;
+}
+.footer-nav{
+    li{
+        a{
+            padding: 0;
+            font-size: 1.4rem;
+            text-transform: none;
+            display: inline-block;
+        }
+        + li{
+            a{
+                margin-left: 38px;
+            }
+        }
+    }
+}
+.copyright-text{
+    text-align: right;
+}

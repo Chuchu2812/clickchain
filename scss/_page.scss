@@ -1,0 +1,19 @@
+/*---------------------------------------
+Page Styles
+---------------------------------------*/
+.page-header{
+    margin: 0;
+    padding: 0;
+    border: none;
+    border-radius: 0;
+    background-image: url(../images/bg/3.png);
+    background-repeat: no-repeat;
+    background-position: right 242px bottom;
+    .overlay{
+        padding: 197px 0 91px;
+    }
+}
+.page-title{
+    text-transform: uppercase;
+    margin: 0;
+}

@@ -1,0 +1,25 @@
+/*---------------------------------------
+About Page Styles
+---------------------------------------*/
+.progress-item{
+    &.progress-red{
+        .progress-bar{
+            background-color: #e74c3c;
+        }
+    }
+    &.progress-green{
+        .progress-bar{
+            background-color: #4cdbc4;
+        }
+    }
+}
+.progress{
+    height: 8px;
+}
+.progress-on, .progress-to{
+    margin-bottom: 0;
+    display: inline-block;
+}
+.progress-to{
+    float: right;
+}

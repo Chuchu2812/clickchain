@@ -1,0 +1,32 @@
+/*---------------------------------------
+Subscription Styles
+---------------------------------------*/
+.subscribe-title{
+    margin-bottom: 27px;
+}
+.subscribe-form{
+    float: left;
+    width: 100%;
+    margin-top: 57px;
+    .form-group{
+        width: calc(100% - 158px);
+        float: left;
+    }
+    [type=submit]{
+        width: 128px;
+        text-align: center;
+        padding-left: 0;
+        padding-right: 0;
+        margin-top: 23px;
+        margin-left: 30px;
+        float: left;
+    }
+    .newsletter-success, .newsletter-error{
+        float: left;
+        width: 100%;
+        clear: both;
+        margin-bottom: 0;
+        padding: 5px 15px;
+        display: none;
+    }
+}

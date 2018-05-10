@@ -1,0 +1,98 @@
+/*---------------------------------------
+Pricing Styles
+---------------------------------------*/
+
+.pricings {
+    float: left;
+    width: 100%;
+    margin-bottom: -30px;
+}
+
+.pricing-table {
+    float: left;
+    width: 100%;
+    margin-top: 46px;
+    margin-bottom: 30px;
+    background: #777777;
+    color: #ffffff;
+    border-radius: 3px;
+    transition: all 0.3s ease;
+    position: relative;
+    &.pricing-red {
+        background-color: #e74c3c;
+        &:hover {
+            box-shadow: 0 14px 26px -12px rgba(#e74c3c, 0.42), 0 4px 23px 0px rgba(#e74c3c, 0.12), 0 8px 10px -5px rgba(#e74c3c, 0.2);
+        }
+        &:before {
+            background-image: url(../images/pricing/2.png);
+        }
+    }
+    &.pricing-green {
+        background-color: #4cdbc4;
+        &:hover {
+            box-shadow: 0 14px 26px -12px rgba(#4cdbc4, 0.42), 0 4px 23px 0px rgba(#4cdbc4, 0.12), 0 8px 10px -5px rgba(#4cdbc4, 0.2);
+        }
+        &:before {
+            background-image: url(../images/pricing/3.png);
+        }
+    }
+    &.pricing-blue {
+        background-color: $primaryColor;
+        &:hover {
+            box-shadow: 0 14px 26px -12px rgba($primaryColor, 0.42), 0 4px 23px 0px rgba($primaryColor, 0.12), 0 8px 10px -5px rgba($primaryColor, 0.2);
+        }
+        &:before {
+            background-image: url(../images/pricing/1.png);
+        }
+    }
+    &:before {
+        content: "";
+        width: 125px;
+        height: 101px;
+        background-image: url(../images/pricing/1.png);
+        background-size: contain;
+        background-repeat: no-repeat;
+        background-position: center center;
+        position: absolute;
+        top: -46px;
+        left: 36px;
+    }
+    .pack-name {
+        text-transform: uppercase;
+        padding: 26px 20px;
+        margin: 0;
+        text-align: center;
+    }
+    .pack-price {
+        background-color: #fdb816;
+        font-size: 3.4rem;
+        margin: 0;
+        color: #ffffff;
+        font-weight: 600;
+        padding: 5px 20px;
+        text-align: center;
+        box-shadow: 0 10px 0 rgba(#000000, 0.11);
+        .price-duration {
+            font-size: 1.8rem;
+            vertical-align: baseline;
+        }
+    }
+    .pack-features {
+        padding: 0;
+        margin: 0;
+        list-style: none;
+        text-align: left;
+        padding: 0 75px;
+        margin-top: 54px;
+        li {
+            &:before {
+                content: "\f00c";
+                font-family: "FontAwesome";
+                margin-right: 6px;
+            }
+        }
+    }
+    .btn {
+        margin: 56px 75px 60px;
+    }
+}

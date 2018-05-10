@@ -1,0 +1,177 @@
+/*---------------------------------------
+Header Styles
+---------------------------------------*/
+
+.main-navbar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 990;
+    min-height: 100px;
+    margin: 0;
+    border-radius: 0;
+    border: none;
+    padding: 30px 0;
+    transition: all 0.3s ease;
+    &.affix {
+        min-height: 60px;
+        padding: 10px 0;
+        box-shadow: 0 10px 20px -12px rgba(0, 0, 0, 0.42), 0 3px 20px 0px rgba(0, 0, 0, 0.12), 0 8px 10px -5px rgba(0, 0, 0, 0.2);
+    }
+    .navbar-brand {
+        height: 40px;
+        padding-top: 0;
+        padding-bottom: 0;
+        img {
+            max-height: 40px;
+            width: auto;
+        }
+    }
+    .navbar-nav {
+        >li {
+            >a {
+                font-size: 1.4rem;
+                padding: 10px 21px;
+                .fa {
+                    margin: 0 !important;
+                    top: 0 !important;
+                    font-size: inherit;
+                }
+                &:after {
+                    content: "";
+                    width: 0;
+                    height: 3px;
+                    position: absolute;
+                    bottom: 0;
+                    left: 21px;
+                    background-color: #ffffff;
+                    transition: all 0.3s ease;
+                }
+                &#search-toggle {
+                    i {
+                        width: 13px;
+                    }
+                    &:after {
+                        content: none;
+                    }
+                }
+            }
+            &:hover {
+                a {
+                    &:after {
+                        width: calc(100% - 42px);
+                    }
+                }
+            }
+        }
+        .dropdown-menu {
+            li {
+                >a {
+                    position: relative;
+                    padding: 11px 20px 9px;
+                    &:before {
+                        content: "";
+                        height: 100%;
+                        border-radius: 3px;
+                        position: absolute;
+                        left: 0;
+                        top: 0;
+                        width: 0;
+                        box-shadow: 0 8px 10px 1px rgba(0, 0, 0, 0.14), 0 3px 14px 2px rgba(0, 0, 0, 0.12), 0 5px 5px -3px rgba(0, 0, 0, 0.2);
+                        transition: all 0.3s ease;
+                        opacity: 0;
+                        z-index: -1;
+                    }
+                    &:hover {
+                        background-color: transparent;
+                        box-shadow: none;
+                        &:before {
+                            width: 100%;
+                            opacity: 1;
+                        }
+                    }
+                }
+            }
+            .searchform {
+                width: 320px;
+                padding: 0 5px;
+                .form-group {
+                    padding: 0;
+                    margin: 0 15px 0 0;
+                    width: calc(100% - 55px);
+                    float: left;
+                    .form-control {
+                        margin-bottom: 0;
+                    }
+                }
+                [type=submit] {
+                    float: left;
+                    margin: 0;
+                }
+            }
+        }
+        .dropdown {
+            .dropdown-menu {
+                top: 100%;
+                margin-top: 0;
+                padding: 15px 0;
+                border-radius: 3px;
+                .dropdown-menu {
+                    top: 0;
+                    left: 100%;
+                }
+            }
+            &:hover {
+                >.dropdown-menu {
+                    opacity: 1;
+                    visibility: visible;
+                }
+            }
+        }
+    }
+}
+
+.header-search {
+    position: absolute;
+    top: 100%;
+    left: 0;
+    right: 0;
+    height: 400px;
+    display: none;
+    padding: 30px 0;
+    .form-control,
+    .form-group .form-control,
+    .form-group.is-focused .form-control {
+        background-image: linear-gradient(#ffffff, #ffffff), linear-gradient(#D2D2D2, #D2D2D2);
+        color: #ffffff;
+        &::-webkit-input-placeholder {
+            color: #ffffff;
+            opacity: 1;
+        }
+        &::-moz-placeholder {
+            color: #ffffff;
+            opacity: 1;
+        }
+        &:-ms-input-placeholder {
+            color: #ffffff;
+            opacity: 1;
+        }
+        &:-moz-placeholder {
+            color: #ffffff;
+            opacity: 1;
+        }
+    }
+}
+
+.search-toggle-mobile {
+    border: none;
+    background-color: transparent;
+    height: 34px;
+    width: 34px;
+    float: right;
+    margin-top: 8px;
+    margin-bottom: 8px;
+    line-height: 32px;
+    display: none;
+}

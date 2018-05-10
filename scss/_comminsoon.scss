@@ -1,0 +1,107 @@
+/*---------------------------------------
+Commingsoon Styles
+---------------------------------------*/
+
+.commingsoon-wrap {
+    background-image: url(../images/bg/commingsoon-1.png);
+    background-size: cover;
+    background-position: center center;
+    text-align: center;
+    padding: 0 15px;
+    position: relative;
+    min-height: 650px;
+    &.style-2 {
+        background-image: url(../images/bg/commingsoon-2.png);
+        text-align: left;
+        .logo {
+            margin-top: 25px;
+        }
+        .style-2-wrap {
+            position: absolute;
+            top: 50%;
+            transform: translateY(-50%);
+            left: 0;
+            right: 0;
+            margin-top: 32px;
+        }
+        .commingsoon-content {
+            position: static;
+            transform: translateY(0);
+            margin-top: 0;
+        }
+        h2 {
+            margin-bottom: 48px;
+        }
+        .countdown-time {
+            margin-bottom: 80px;
+        }
+        .section_count {
+            +.section_count {
+                margin-left: 85px;
+            }
+            .text {
+                font-size: 1.8rem;
+            }
+        }
+        .tcount {
+            font-size: 4.3rem;
+            margin-bottom: 24px;
+        }
+    }
+    .logo {
+        margin-top: 70px;
+    }
+    .commingsoon-content {
+        position: absolute;
+        top: 50%;
+        transform: translateY(-50%);
+        left: 15px;
+        right: 15px;
+        margin-top: -37px;
+    }
+    p {
+        font-weight: 600;
+        font-size: 1.8rem;
+        margin-bottom: 8px;
+    }
+    h2 {
+        margin-bottom: 80px;
+    }
+    .countdown-time {
+        color: #ffffff;
+        line-height: 100%;
+        margin-bottom: 55px;
+    }
+    .section_count {
+        display: inline-block;
+        +.section_count {
+            margin-left: 60px;
+        }
+    }
+    .tcount {
+        font-size: 3.4rem;
+        font-weight: 600;
+        display: block;
+        margin-bottom: 17px;
+    }
+    .subscribe-form {
+        max-width: 350px;
+        float: none;
+        margin: 0 auto;
+        position: relative;
+        .form-group {
+            width: 100%;
+            text-align: left;
+        }
+        [type=submit] {
+            background-color: transparent;
+            width: auto;
+            color: #ffffff;
+            border: none;
+            position: absolute;
+            right: 0;
+            top: 0;
+            margin-top: 30px;
+        }
+    }
+}

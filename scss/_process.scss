@@ -1,0 +1,35 @@
+/*---------------------------------------
+Process Styles
+---------------------------------------*/
+.process-item{
+    float: left;
+    width: 100%;
+    text-align: center;
+}
+.process-img{
+    position: relative;
+    &:after{
+        content: "";
+        height: 18px;
+        width: 63px;
+        background-image: url(../images/process/arrow-1.png);
+        background-size: contain;
+        background-repeat: no-repeat;
+        position: absolute;
+        top: 17px;
+        right: -50px;
+        .col-xs-3:last-child &{
+            content: none;
+        }
+        .col-xs-3:nth-child(2n) &{
+            background-image: url(../images/process/arrow-2.png);
+            bottom: 12px;
+            top: auto;
+        }
+    }
+}
+.process-title{
+    font-weight: 400;
+    margin-top: 14px;
+    margin-bottom: 0;
+}

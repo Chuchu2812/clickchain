@@ -1,0 +1,87 @@
+/*---------------------------------------
+Team Styles
+---------------------------------------*/
+.team-area{
+    .section-header{
+        margin-bottom: 37px;
+    }
+}
+.team-members{
+    float: left;
+    width: 100%;
+    margin-bottom: -20px;
+}
+.member{
+    float: left;
+    width: 100%;
+    margin-bottom: 20px;
+    text-align: center;
+    padding: 40px;
+    transition: all 0.3s ease;
+    &:hover{
+        box-shadow: -7px 7px 7px 0px rgba(0, 0, 0, 0.2);
+    }
+}
+.member-mock{
+    border-radius: 50%;
+    overflow: hidden;
+    display: inline-block;
+    transition: all 0.3s ease;
+    .member:hover &{
+        box-shadow: -7px 7px 7px 0px rgba(0, 0, 0, 0.2);
+    }
+    img{
+        max-width: 100%;
+    }
+}
+.member-title{
+    font-size: 1.8rem;
+    margin-top: 12px;
+    margin-bottom: 0;
+    transition: all 0.3s ease;
+    .member:hover &{
+        color: #ffffff;
+    }
+}
+.member-rule{
+    margin-top: 10px;
+    margin-bottom: 0;
+    transition: all 0.3s ease;
+    .member:hover &{
+        color: #ffffff;
+    }
+}
+.member-about{
+    margin-top: 10px;
+    margin-bottom: 0;
+    transition: all 0.3s ease;
+    .member:hover &{
+        color: #ffffff;
+    }
+}
+.member-social{
+    margin-top: 12px;
+    a{
+        color: $baseFontColor;
+        font-size: 1.8rem;
+        display: inline-block;
+        margin: 0 7px;
+        .fa{
+            transition: all 0.3s ease;
+        }
+        &:hover{
+            .fa-facebook{
+                color: #3b5999;
+            }
+            .fa-twitter{
+                color: #55acee;
+            }
+            .fa-google-plus{
+                color: #dd4b39;
+            }
+        }
+        .member:hover &{
+            color: #ffffff;
+        }
+    }
+}

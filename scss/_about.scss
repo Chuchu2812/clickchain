@@ -1,0 +1,68 @@
+/*---------------------------------------
+About Styles
+---------------------------------------*/
+
+.about-us-area {
+    .card {
+        padding-top: 50%;
+        float: left;
+        width: 100%;
+        margin: 0;
+        transition: all 0.3s ease;
+        color: #ffffff;
+        position: relative;
+        &:hover {
+            box-shadow: -3px 5px 5px 0 rgba(0, 0, 0, 0.28), 7px 5px 2px -5px rgba(0, 0, 0, 0.4), 0 3px 7px 0 rgba(0, 0, 0, 0.24);
+        }
+        &.card-orange {
+            background-color: #e74c3c;
+            border-radius: 3px 3px 0 0;
+            .btn {
+                color: #e74c3c;
+            }
+        }
+        &.card-blue {
+            background-color: $primaryColor;
+            border-radius: 3px 3px 0 0;
+            .btn {
+                color: $primaryColor;
+            }
+        }
+        &.card-default {
+            border-radius: 0 0 0 3px;
+        }
+        &.card-green {
+            border-radius: 0 0 3px 0;
+            background-color: #4cdbc4;
+            .btn {
+                color: #4cdbc4;
+            }
+        }
+        &.card-half {
+            width: 50%;
+        }
+        .card-content {
+            position: absolute;
+            left: 0;
+            right: 0;
+            bottom: auto;
+            text-align: center;
+            top: 50%;
+            transform: translateY(-50%);
+            h5 {
+                margin: 0;
+                +.btn {
+                    margin-top: 17px;
+                    margin-bottom: 0;
+                }
+            }
+        }
+    }
+}
+
+.about-us-content {
+    h2 {
+        margin-top: 84px;
+        margin-bottom: 25px;
+    }
+}

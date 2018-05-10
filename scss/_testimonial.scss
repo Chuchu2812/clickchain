@@ -1,0 +1,133 @@
+/*---------------------------------------
+Testimonial Styles
+---------------------------------------*/
+.testimonial-area{
+    background-image: url(../images/bg/1.png);
+    background-size: cover;
+    background-position: center center;
+    &.style-2{
+        background-image: none;
+    }
+}
+.testimonials{
+    float: left;
+    width: 100%;
+    margin-bottom: -30px;
+}
+.testimonial-item{
+    blockquote{
+        background-color: #ffffff;
+        border-radius: 3px;
+        box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.14), 0 3px 1px -2px rgba(0, 0, 0, 0.2), 0 1px 5px 0 rgba(0, 0, 0, 0.12);
+        border: none;
+        transition: all 0.3s ease;
+        font-size: $baseFontSize;
+        line-height: $baseLineHeight;
+        padding: 39px 45px;
+        position: relative;
+        &:before{
+            content: "\f10d";
+            font-family: "FontAwesome";
+            font-size: 3.4rem;
+            position: absolute;
+            line-height: 100%;
+            top: 8px;
+            left: 10px;
+        }
+        .style-2 &{
+            color: #ffffff;
+            text-align: center;
+            padding-top: 28px;
+            padding-bottom: 30px;
+            margin-bottom: 30px;
+            &:before{
+                color: #ffffff;
+                position: static;
+                display: block;
+                margin-bottom: 20px;
+            }
+        }
+        .style-3 &{
+            text-align: center;
+            padding-top: 28px;
+            padding-bottom: 30px;
+            margin-bottom: 30px;
+            &:before{
+                position: static;
+                display: block;
+                margin-bottom: 20px;
+            }
+        }
+    }
+    &:hover{
+        blockquote{
+            box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.28), 0 6px 2px -4px rgba(0, 0, 0, 0.4), 0 2px 10px 0 rgba(0, 0, 0, 0.24);
+        }
+    }
+    .commenter{
+        float: left;
+        width: 100%;
+        clear: both;
+        .mock{
+            width: 80px;
+            height: 80px;
+            border-radius: 50%;
+            overflow: hidden;
+            float: left;
+            margin-right: 20px;
+        }
+        .body{
+            float: left;
+            width: calc(100% - 100px);
+        }
+        .client-name{
+            margin-top: 18px;
+            margin-bottom: 0;
+        }
+        .client-info{
+            margin-top: 5px;
+        }
+        .style-3 &{
+            text-align: center;
+            float: none;
+            display: inline-block;
+            margin: 0 auto;
+            .mock{
+                display: inline-block;
+                float: none;
+                margin: 0;
+            }
+            .body{
+                float: none;
+                width: 100%;
+            }
+            .client-name{
+                margin-top: 12px;
+                margin-bottom: 0;
+            }
+            .client-info{
+                margin-top: 5px;
+            }
+        }
+    }
+}
+.commenter{
+    .style-2 &{
+        opacity: 0.33;
+        text-align: center;
+        transition: all 0.3s ease;
+        &.slick-current{
+            opacity: 1;
+        }
+        .mock{
+            display: inline-block;
+        }
+        .client-name{
+            margin-top: 12px;
+            margin-bottom: 0;
+        }
+        .client-info{
+            margin-top: 5px;
+        }
+    }
+}

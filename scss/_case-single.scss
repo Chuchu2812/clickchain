@@ -1,0 +1,56 @@
+/*---------------------------------------
+Case Single Page Styles
+---------------------------------------*/
+
+.company-information {
+    margin-top: 44px;
+}
+
+.full-width {
+    &.section-padding {
+        padding: 160px 0;
+    }
+    .left-content,
+    .right-content {
+        float: left;
+        width: 100%;
+        padding: 0 150px;
+    }
+    .left-img,
+    .right-img {
+        position: absolute;
+        top: 0;
+        bottom: 0;
+        img {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+        }
+    }
+    .left-img {
+        left: 0px;
+    }
+    .right-img {
+        right: 0;
+    }
+}
+
+.checklist {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    li {
+        font-weight: 500;
+        line-height: 2;
+        &:before {
+            content: "\f00c";
+            font-family: "FontAwesome";
+            margin-right: 8px;
+        }
+    }
+}
+
+.result-content {
+    margin-top: 115px;
+}

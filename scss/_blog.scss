@@ -1,0 +1,85 @@
+/*---------------------------------------
+Blog Styles
+---------------------------------------*/
+.posts{
+    float: left;
+    width: 100%;
+    margin-bottom: -30px;
+}
+.post{
+    transition: all 0.3s ease;
+    &:hover{
+        box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.28), 0 6px 2px -4px rgba(0, 0, 0, 0.4), 0 2px 10px 0 rgba(0, 0, 0, 0.24)
+    }
+    .post-thumb{
+        width: 100%;
+        height: auto;
+        overflow: visible;
+    }
+    .post-body{
+        position: static;
+    }
+    .sharing{
+        right: 20px;
+        position: absolute;
+        bottom: 0;
+        transform: translateY(50%);
+        .btn{
+            z-index: 1;
+        }
+        .social-share{
+            position: absolute;
+            background-color: #e74c3c;
+            width: auto;
+            right: 50%;
+            left: auto;
+            white-space: nowrap;
+            height: 20px;
+            line-height: 20px;
+            padding: 0 30px 0 10px;
+            top: 50%;
+            transform: translateY(-50%) rotateY(90deg);
+            transform-origin: right;
+            opacity: 0;
+            z-index: 0;
+            border-top-left-radius: 10px;
+            border-bottom-left-radius: 10px;
+            transition: all 0.3s ease;
+            a{
+                color: #ffffff;
+                font-size: 1.2rem;
+                display: inline-block;
+                line-height: 20px;
+                padding: 0 6px;
+            }
+        }
+        &:hover{
+            .social-share{
+                transform: translateY(-50%) rotateY(0);
+                opacity: 1;
+            }
+        }
+    }
+    .post-body{
+        padding: 30px;
+    }
+    .post-title{
+        font-size: 1.8rem;
+        color: #111111;
+        margin: 0;
+        a{
+            color: inherit;
+        }
+    }
+    .post-excerpt{
+        margin-top: 15px;
+    }
+    .post-meta{
+        margin-right: 13px;
+        display: inline-block;
+        &:last-child{
+            margin-right: 0;
+            margin-left: 13px;
+        }
+    }
+}

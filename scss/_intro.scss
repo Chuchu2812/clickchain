@@ -1,0 +1,41 @@
+/*---------------------------------------
+Intro Styles
+---------------------------------------*/
+.intro-area{
+    &.section-padding{
+        padding: 80px 0;
+    }
+}
+.intros{
+    float: left;
+    width: 100%;
+    margin-bottom: -30px;
+}
+.intro{
+    float: left;
+    width: 100%;
+    margin-bottom: 30px;
+    text-align: center;
+    padding: 40px 10px;
+    transition: all 0.3s ease;
+    &:hover{
+        box-shadow: -7px 7px 7px 0px rgba(0, 0, 0, 0.2);
+        p{
+            color: #ffffff;
+        }
+    }
+    p{
+        margin-top: 17px;
+        margin-bottom: 0;
+        transition: all 0.3s ease;
+    }
+}
+.intro-title{
+    font-size: 1.8rem;
+    margin-top: 18px;
+    margin-bottom: 0;
+    transition: all 0.3s ease;
+    .intro:hover &{
+        color: #ffffff;
+    }
+}

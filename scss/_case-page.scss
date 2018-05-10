@@ -1,0 +1,86 @@
+/*---------------------------------------
+Case Page Styles
+---------------------------------------*/
+.case-study-area{
+    .section-header{
+        margin-bottom: 58px;
+    }
+}
+.case-filter{
+    margin-bottom: 30px;
+}
+.btn-filter{
+    border: 1px solid #e7e7e7;
+    background-color: transparent;
+    color: $baseFontColor;
+    margin: 0 7px;
+    &:hover, &:focus, &:active, &:active:focus, &:active:hover{
+        border: 1px solid #e7e7e7;
+        background-color: transparent;
+        color: $baseFontColor;
+    }
+    &.active{
+        color: #ffffff;
+    }
+}
+.cases{
+    float: left;
+    width: 100%;
+    margin-bottom: -30px;
+}
+.case{
+    position: relative;
+    float: left;
+    width: 100%;
+    margin-bottom: 30px;
+    .case-hover{
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        transition: all 0.3s ease;
+        opacity: 0;
+        visibility: hidden;
+    }
+    .case-hover-content{
+        position: absolute;
+        left: 0;
+        right: 0;
+        padding: 0 20px;
+        top: 50%;
+        transform: translateY(-50%);
+        text-align: center;
+        color: #ffffff;
+        .case-title{
+            font-size: 2.2rem;
+            color: #ffffff;
+            margin: 0;
+        }
+        p{
+            color: #ffffff;
+            margin-top: 26px;
+            margin-bottom: 0;
+        }
+        .fa{
+            font-size: 2.4rem;
+            margin-top: 18px;
+        }
+    }
+    &:hover{
+        .case-hover{
+            opacity: 1;
+            visibility: visible;
+        }
+    }
+    &.case-red{
+        .case-hover{
+            background-color: rgba(#e74c3c, 0.9);
+        }
+    }
+    &.case-green{
+        .case-hover{
+            background-color: rgba(#4cdbc4, 0.9);
+        }
+    }
+}

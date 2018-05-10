@@ -1,0 +1,156 @@
+/*---------------------------------------
+Banner Styles
+---------------------------------------*/
+
+.banner {
+    width: 100%;
+    overflow: hidden;
+    &.style-2{
+        background-image: url(../images/bg/2.png);
+        background-position: center center;
+        background-size: cover;
+        background-color: transparent;
+    }
+}
+
+.banner-item {
+    position: relative;
+    height: 768px;
+    .left-part,
+    .right-part {
+        height: 768px;
+        position: relative;
+    }
+}
+
+.banner-content {
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 50%;
+    transform: translateY(-50%);
+    h1 {
+        text-transform: uppercase;
+        line-height: 1.357;
+        margin: 0;
+    }
+    p {
+        font-size: 1.8rem;
+        font-weight: 300;
+        line-height: 1.667;
+        margin-top: 40px;
+        margin-bottom: 0;
+    }
+    .banner-features {
+        list-style: none;
+        margin: 6px 0 0;
+        padding: 0;
+        li {
+            display: inline-block;
+            font-size: 1.8rem;
+            +li {
+                margin-left: 58px;
+            }
+            &:before {
+                content: "\f00c";
+                font-family: "FontAwesome";
+                margin-right: 4px;
+            }
+        }
+    }
+    .button-group {
+        margin-top: 40px;
+    }
+}
+
+.banner-slider {
+    .owl-pagination {
+        position: absolute;
+        bottom: 22px;
+        left: 50%;
+        transform: translateX(-50%);
+        overflow: hidden;
+        .owl-page {
+            border: 3px solid #ffffff;
+            background-color: transparent;
+            height: 20px;
+            width: 20px;
+            display: inline-block;
+            border-radius: 50%;
+            transition: all 0.3s ease;
+            margin: 0 5px;
+            &.active {
+                background-color: #ffffff;
+            }
+        }
+    }
+    .owl-prev, .owl-next{
+        position: absolute;
+        top: 0;
+        width: 50%;
+        bottom: 0;
+        text-indent: -9999px;
+    }
+    .owl-buttons .owl-prev{
+        left: -570px;
+        cursor: url(../images/template/left-arrow.png), auto;
+    }
+    .owl-buttons .owl-next{
+        right: -570px;
+        cursor: url(../images/template/right-arrow.png), auto;
+    }
+}
+
+.banner-img {
+    position: absolute;
+    left: 0;
+    right: auto;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+.banner-registration {
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 50%;
+    transform: translateY(-50%);
+    .banner-registration-title {
+        margin: 0;
+        padding: 23px 40px;
+        font-size: 2.4rem;
+        background-color: #e74c3c;
+        text-transform: uppercase;
+        box-shadow: 2px 9px 7px 0px rgba(0, 0, 0, 0.2);
+        border-top-left-radius: 3px;
+        border-top-right-radius: 3px;
+    }
+    form {
+        padding: 40px;
+        .form-group {
+            margin: 0;
+            .form-control {
+                &::-webkit-input-placeholder {
+                    color: #ffffff;
+                    opacity: 1;
+                }
+                &::-moz-placeholder {
+                    color: #ffffff;
+                    opacity: 1;
+                }
+                &:-ms-input-placeholder {
+                    color: #ffffff;
+                    opacity: 1;
+                }
+                &:-moz-placeholder {
+                    color: #ffffff;
+                    opacity: 1;
+                }
+            }
+        }
+        .btn{
+            width: 100%;
+            text-align: center;
+        }
+    }
+}

@@ -1,0 +1,207 @@
+/*---------------------------------------
+Blog Single Page Styles
+---------------------------------------*/
+.blog-single{
+    .post{
+        float: left;
+        width: 100%;
+        clear: both;
+        &:hover{
+            box-shadow: none;
+        }
+    }
+    .post-metas{
+        font-weight: 600;
+        margin-top: 56px;
+        margin-bottom: 20px;
+        .post-meta{
+            margin-right: 0;
+            .fa{
+                margin-right: 5px;
+            }
+            + .post-meta{
+                margin-left: 35px;
+            }
+        }
+        .tags-meta{
+            a{
+                color: $baseFontColor;
+            }
+        }
+    }
+    .post-entry{
+        blockquote{
+            font-size: 1.4rem;
+            font-weight: 600;
+            padding: 0 0 0 12px;
+            border-left-width: 6px;
+            margin-left: 40px;
+        }
+    }
+    .post-footer{
+        margin-top: 55px;
+        .post-tags{
+            label{
+                font-weight: 600;
+                text-transform: uppercase;
+                color: $baseFontColor;
+            }
+            a{
+                display: inline-block;
+                line-height: 33px;
+                color: #ffffff;
+                border-radius: 3px;
+                padding: 0 15px;
+                margin-left: 3px;
+            }
+        }
+        .post-share{
+            clear: both;
+            float: left;
+            width: 100%;
+            text-align: right;
+            align-content: center;
+            a{
+                display: inline-block;
+                line-height: 33px;
+                color: #ffffff;
+                border-radius: 3px;
+                padding: 0 15px;
+                &.share-on-facebook{
+                    background-color: #3b5999;
+                }
+                &.share-on-twitter{
+                    background-color: #55acee;
+                }
+                &.share-on-google-plus{
+                    background-color: #dd4b39;
+                }
+            }
+        }
+    }
+    
+    .author-box{
+        box-shadow: 0px 0px 8px 0px rgba(0, 0, 0, 0.15); 
+        border-radius: 3px;
+        float: left;
+        width: 100%;
+        clear: both;
+        padding: 60px 50px;
+        margin-top: 60px;
+        .author-box-inner{
+            float: left;
+            width: 100%;
+        }
+        .author-avatar{
+            width: 140px;
+            height: 140px;
+            margin-right: 55px;
+            float: left;
+            + .author-info{
+                width: calc(100% - 195px);
+            }
+        }
+        .author-info{
+            float: left;
+            width: 100%;
+        }
+        .author-name{
+            font-size: 1.8rem;
+            margin-bottom: 0;
+        }
+        .author-profession{
+            margin-top: 10px;
+            margin-bottom: 0;
+        }
+        .author-bio{
+            margin-top: 10px;
+            margin-bottom: 0;
+        }
+        .author-social{
+            margin-top: 10px;
+            a{
+                color: $baseFontColor;
+                display: inline-block;
+                + a{
+                    margin-left: 10px;
+                }
+            }
+        }
+    }
+    
+    .given-comment{
+        float: left;
+        width: 100%;
+        clear: both;
+        margin-top: 120px;
+    }
+    .given-comment-title{
+        font-size: 2.2rem;
+        float: left;
+        width: 100%;
+    }
+    .comments{
+        float: left;
+        width: 100%;
+        list-style: none;
+        margin: 0;
+        padding: 0;
+    }
+    .comment{
+        float: left;
+        width: 100%;
+    }
+    .comment-wrap{
+        float: left;
+        width: 100%;
+        padding: 30px 0;
+    }
+    .commenter-thumb{
+        float: left;
+        width: 100px;
+        height: 100px;
+        border-radius: 50%;
+        overflow: hidden;
+        margin-right: 30px;
+        img{
+            max-width: 100%;
+        }
+    }
+    .comment-body{
+        float: left;
+        width: calc(100% - 130px);
+    }
+    .comment-title{
+        font-size: 1.8rem;
+        text-transform: none;
+        margin-bottom: 10px;
+    }
+    .comment-content{
+        margin-bottom: 10px;
+    }
+    .comment-footer{
+        float: left;
+        width: 100%;
+    }
+    .comment-time{
+        float: left;
+        display: inline-block;
+        margin-bottom: 0;
+        font-size: 1.2rem;
+    }
+    .comment-reply{
+        float: right;
+    }
+    .child-comments{
+        padding-left: 80px;
+    }
+    .commenting-wrap{
+        float: left;
+        width: 100%;
+        margin-top: 60px;
+        clear: both;
+    }
+    .comment-form-title{
+        font-size: 2.2rem;
+    }
+}

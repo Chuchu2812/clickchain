@@ -1,0 +1,26 @@
+/*---------------------------------------
+Call to Action Styles
+---------------------------------------*/
+.call-to-action{
+    position: relative;
+    overflow: hidden;
+    padding: 150px 0;
+}
+.cta-content{
+    .cta-title{
+        margin: 0;
+        line-height: 1.333;
+        + .btn{
+            margin-top: 18px;
+        }
+    }
+}
+.cta-mock{
+    position: relative;
+    width: 100%;
+    img{
+        position: relative;
+        margin-top: -116px;
+        margin-bottom: -340px;
+    }
+}
